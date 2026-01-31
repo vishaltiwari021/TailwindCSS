@@ -18,17 +18,16 @@ This project is built using **Tailwind CSS**, a utility-first CSS framework for 
 
 - HTML5
 - Tailwind CSS
-- Node.js (for Tailwind build)
 - npm / yarn / pnpm
 
 ---
 
 ## 📦 Installation
-# Terminal
+## Terminal
  - npm install tailwindcss @tailwindcss/cli
-# src/index.css
+## src/index.css
  - @import "tailwindcss";
-# Terminal
+## Terminal
  - npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ### 1️⃣ Clone the repository
 ```bash

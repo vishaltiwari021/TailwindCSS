@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X UI Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="bg-[#05070b] text-white">
+  <div class="app-shell mx-auto flex w-full">
+    <aside class="hidden w-24 shrink-0 xl:block xl:w-72">
+      <div class="sticky top-0 flex min-h-screen flex-col justify-between px-4 py-6">
+        <div class="mb-5">
+          <div class="mb-8 flex h-14 w-14 items-center justify-center rounded-full text-3xl transition hover:bg-white/10">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+
+          <nav>
+            <ul class="space-y-2 text-lg">
+              <li>
+                <a href="#" class="nav-item active">
+                  <i class="fa-solid fa-house text-xl"></i>
+                  <span class="hidden xl:inline">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                  <span class="hidden xl:inline">Explore</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-bell text-xl"></i>
+                  <span class="hidden xl:inline">Notifications</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-envelope text-xl"></i>
+                  <span class="hidden xl:inline">Messages</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-bookmark text-xl"></i>
+                  <span class="hidden xl:inline">Bookmarks</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-user text-xl"></i>
+                  <span class="hidden xl:inline">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-item">
+                  <i class="fa-solid fa-gear text-xl"></i>
+                  <span class="hidden xl:inline">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="mt-8 hidden w-full rounded-full bg-sky-500 px-6 py-3 text-base font-bold text-white transition hover:bg-sky-400 xl:block">
+            Post
+          </button>
+        </div>
+
+        <div class="hidden rounded-2xl border border-white/10 bg-white/5 px-4 py-3 xl:flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+            alt="Profile avatar"
+            class="h-11 w-11 rounded-full object-cover"
+          >
+          <div class="min-w-0">
+            <div class="truncate font-semibold">Aanya Dev</div>
+            <div class="truncate text-sm text-slate-400">@aanyadev</div>
+          </div>
+          <i class="fa-solid fa-ellipsis ml-auto text-slate-400"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="min-w-0 flex-1 border-x border-white/10 pb-20 xl:pb-0">
+      <header class="glass-panel sticky top-0 z-20 border-b border-white/10 backdrop-blur-xl">
+        <div class="flex items-center justify-between px-4 py-3 sm:px-6">
+          <div class="flex items-center gap-3">
+            <button class="flex h-10 w-10 items-center justify-center rounded-full xl:hidden">
+              <i class="fa-brands fa-x-twitter text-xl"></i>
+            </button>
+            <h1 class="text-lg font-bold sm:text-xl">Home</h1>
+          </div>
+          <button class="flex h-10 w-10 items-center justify-center rounded-full transition hover:bg-white/10">
+            <i class="fa-solid fa-sparkles text-slate-300"></i>
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 text-sm font-semibold text-slate-400">
+          <button class="relative border-b-2 border-sky-500 px-4 py-4 text-white">
+            For you
+          </button>
+          <button class="px-4 py-4 transition hover:bg-white/5">
+            Following
+          </button>
+        </div>
+      </header>
+
+      <section class="border-b border-white/10 px-4 py-4 sm:px-6">
+        <div class="flex items-start gap-3">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80"
+            alt="User avatar"
+            class="h-11 w-11 rounded-full object-cover"
+          >
+          <div class="min-w-0 flex-1">
+            <input
+              type="text"
+              placeholder="What's happening?"
+              class="w-full bg-transparent py-2 text-lg text-white outline-none placeholder:text-slate-500"
+            >
+            <div class="mt-2 inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3 py-1 text-sm text-sky-400">
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>Everyone can reply</span>
+            </div>
+            <div class="mt-4 flex flex-col gap-3 border-t border-white/10 pt-4 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex flex-wrap items-center gap-4 text-sky-400">
+                <i class="fa-regular fa-image cursor-pointer transition hover:text-sky-300"></i>
+                <i class="fa-regular fa-face-smile cursor-pointer transition hover:text-sky-300"></i>
+                <i class="fa-solid fa-chart-simple cursor-pointer transition hover:text-sky-300"></i>
+                <i class="fa-regular fa-calendar cursor-pointer transition hover:text-sky-300"></i>
+                <i class="fa-solid fa-location-dot cursor-pointer transition hover:text-sky-300"></i>
+              </div>
+              <button class="w-full rounded-full bg-sky-500 px-5 py-2 font-semibold text-white transition hover:bg-sky-400 sm:w-auto">
+                Post
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="w-full border-b border-white/10 px-4 py-3 text-sm font-medium text-sky-400 transition hover:bg-white/5 sm:px-6">
+        Show 245 posts
+      </button>
+
+      <section class="divide-y divide-white/10">
+        <article class="px-4 py-5 transition hover:bg-white/[0.03] sm:px-6">
+          <div class="flex items-start gap-3">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+              alt="Post author avatar"
+              class="h-11 w-11 rounded-full object-cover"
+            >
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="font-bold text-white hover:underline">Noir Aesthetic</span>
+                <span class="text-slate-400">@noiraesthetic</span>
+                <span class="text-slate-500">-</span>
+                <span class="text-slate-400">6h</span>
+              </div>
+              <p class="mt-2 text-[15px] leading-6 text-slate-100">
+                Working on cleaner layouts tonight. Sometimes the smallest spacing fix changes the whole interface.
+              </p>
+              <div class="post-card mt-4 overflow-hidden rounded-3xl border border-white/10">
+                <img
+                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Workspace setup"
+                  class="h-64 w-full object-cover sm:h-80"
+                >
+              </div>
+              <div class="mt-4 flex items-center justify-between text-sm text-slate-500">
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>128</span>
+                </button>
+                <button class="post-action hover:text-emerald-400">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span>54</span>
+                </button>
+                <button class="post-action hover:text-pink-400">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>1.2K</span>
+                </button>
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <span>89</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="px-4 py-5 transition hover:bg-white/[0.03] sm:px-6">
+          <div class="flex items-start gap-3">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+              alt="Post author avatar"
+              class="h-11 w-11 rounded-full object-cover"
+            >
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="font-bold text-white hover:underline">Noir Aesthetic</span>
+                <span class="text-slate-400">@noiraesthetic</span>
+                <span class="text-slate-500">-</span>
+                <span class="text-slate-400">6h</span>
+              </div>
+              <p class="mt-2 text-[15px] leading-6 text-slate-100">
+                Working on cleaner layouts tonight. Sometimes the smallest spacing fix changes the whole interface.
+              </p>
+              <div class="post-card mt-4 overflow-hidden rounded-3xl border border-white/10">
+                <img
+                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Workspace setup"
+                  class="h-64 w-full object-cover sm:h-80"
+                >
+              </div>
+              <div class="mt-4 flex items-center justify-between text-sm text-slate-500">
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>128</span>
+                </button>
+                <button class="post-action hover:text-emerald-400">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span>54</span>
+                </button>
+                <button class="post-action hover:text-pink-400">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>1.2K</span>
+                </button>
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <span>89</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="px-4 py-5 transition hover:bg-white/[0.03] sm:px-6">
+          <div class="flex items-start gap-3">
+            <img
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80"
+              alt="Post author avatar"
+              class="h-11 w-11 rounded-full object-cover"
+            >
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="font-bold text-white hover:underline">Mira Codes</span>
+                <span class="text-slate-400">@miracodes</span>
+                <span class="text-slate-500">-</span>
+                <span class="text-slate-400">2h</span>
+              </div>
+              <p class="mt-2 text-[15px] leading-6 text-slate-100">
+                A responsive UI feels better when the content breathes. More contrast, better spacing, fewer hard widths.
+              </p>
+              <div class="mt-4 rounded-3xl border border-dashed border-sky-500/30 bg-sky-500/5 p-4 text-sm text-slate-300">
+                Quick tip: replace fixed `w-1/2` sidebars with breakpoint-based widths and let the center column flex.
+              </div>
+              <div class="mt-4 flex items-center justify-between text-sm text-slate-500">
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>44</span>
+                </button>
+                <button class="post-action hover:text-emerald-400">
+                  <i class="fa-solid fa-repeat"></i>
+                  <span>17</span>
+                </button>
+                <button class="post-action hover:text-pink-400">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>602</span>
+                </button>
+                <button class="post-action hover:text-sky-400">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  <span>12</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <aside class="hidden w-[350px] shrink-0 lg:block">
+      <div class="sticky top-0 max-h-screen space-y-5 overflow-y-auto px-5 py-4 pb-8">
+        <div class="glass-panel rounded-full border border-white/10 px-4 py-3">
+          <div class="flex items-center gap-3 text-slate-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full bg-transparent text-sm text-white outline-none placeholder:text-slate-500"
+            >
+          </div>
+        </div>
+
+        <section class="glass-panel rounded-3xl border border-white/10 p-5">
+          <h2 class="text-xl font-bold">What's happening</h2>
+          <div class="mt-4 space-y-4">
+            <div class="rounded-2xl px-3 py-2 transition hover:bg-white/5">
+              <div class="text-xs text-slate-500">Design - Trending in India</div>
+              <div class="mt-1 font-semibold">#UIDesign</div>
+              <div class="mt-1 text-sm text-slate-500">28.4K posts</div>
+            </div>
+            <div class="rounded-2xl px-3 py-2 transition hover:bg-white/5">
+              <div class="text-xs text-slate-500">Technology · Trending</div>
+              <div class="mt-1 font-semibold">Tailwind CSS</div>
+              <div class="mt-1 text-sm text-slate-500">12.8K posts</div>
+            </div>
+            <div class="rounded-2xl px-3 py-2 transition hover:bg-white/5">
+              <div class="text-xs text-slate-500">Frontend · Live now</div>
+              <div class="mt-1 font-semibold">Responsive Layout Tips</div>
+              <div class="mt-1 text-sm text-slate-500">8,230 posts</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="glass-panel rounded-3xl border border-white/10 p-5">
+          <h2 class="text-xl font-bold">Who to follow</h2>
+          <div class="mt-4 space-y-4">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=200&q=80"
+                alt="Suggested profile"
+                class="h-11 w-11 rounded-full object-cover"
+              >
+              <div class="min-w-0 flex-1">
+                <div class="truncate font-semibold">Hari Sharma</div>
+                <div class="truncate text-sm text-slate-500">@harisharma</div>
+              </div>
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-slate-200">
+                Follow
+              </button>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                alt="Suggested profile"
+                class="h-11 w-11 rounded-full object-cover"
+              >
+              <div class="min-w-0 flex-1">
+                <div class="truncate font-semibold">Nari Verma</div>
+                <div class="truncate text-sm text-slate-500">@nariverma</div>
+              </div>
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-slate-200">
+                Follow
+              </button>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=200&q=80"
+                alt="Suggested profile"
+                class="h-11 w-11 rounded-full object-cover"
+              >
+              <div class="min-w-0 flex-1">
+                <div class="truncate font-semibold">Kuldeep Rao</div>
+                <div class="truncate text-sm text-slate-500">@kuldeeprao</div>
+              </div>
+              <button class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-slate-200">
+                Follow
+              </button>
+            </div>
+          </div>
+          <button class="mt-4 text-sm font-medium text-sky-400 transition hover:text-sky-300">
+            Show more
+          </button>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="glass-panel fixed inset-x-0 bottom-0 z-30 border-t border-white/10 px-6 py-3 xl:hidden">
+    <ul class="flex items-center justify-between text-xl text-slate-300">
+      <li><a href="#" class="transition hover:text-white"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="#" class="transition hover:text-white"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      <li><a href="#" class="transition hover:text-white"><i class="fa-solid fa-bell"></i></a></li>
+      <li><a href="#" class="transition hover:text-white"><i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="#" class="transition hover:text-white"><i class="fa-solid fa-user"></i></a></li>
+    </ul>
+  </nav>
+</body>
+</html>
